@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class DataService {
 
   constructor(private http: HttpClient) { }
-  /*private adventure: any[] = [
+  private adventure: any[] = [
     {id: 1, name: "Годзилла(2014)", url: "https://kinogo-net.org/v7/uploads/posts/2020-12/1607501640-159682901.jpg"},
     {id: 2, name: "Безумные начала(2019)", url: "https://kinogo-net.org/v7/uploads/posts/2020-11/1606124570-1051241304.jpg"},
     {id: 3, name: "Наруто: Ураганные хроники (2007)", url: "https://kinogo-net.org/v7/uploads/posts/2020-12/1607417023-1625721255.jpg"},
@@ -20,7 +20,7 @@ export class DataService {
   ]
   private action: any[] = [
     {id: 1, name: 'Ярость (2014)', url: "https://kinogo-net.org/v7/uploads/posts/2020-12/1607502240-1567320575.jpg"},
-    {id: 2, name: 'Стрелок (2007)', url: "https://kinogo-net.org/v7/uploads/posts/2020-12/1607502066-1084993394.jpg"},
+    {id: 2, name: 'Ярость (2014)', url: "https://kinogo-net.org/v7/uploads/posts/2020-12/1607502066-1084993394.jpg"},
     {id: 3, name: 'Крепкий орешек (1988)', url: "https://kinogo-net.org/v7/uploads/posts/2020-12/1607501949-1767018572.jpg"},
     {id: 4, name: 'Бронсон (2008)', url: "https://kinogo-net.org/v7/uploads/posts/2020-12/1607501743-675637848.jpg"},
     {id: 5, name: 'Годзилла (2014)', url: "https://kinogo-net.org/v7/uploads/posts/2020-12/1607501640-159682901.jpg"},
@@ -74,7 +74,7 @@ export class DataService {
     {id: 9, name: "Секретная служба Санта-Клауса (2011)", url: "https://kinogo-net.org/v7/uploads/posts/2020-12/1607335162-875601888.jpg"}
   ]
 
-  adventuref(){
+/*  adventuref(){
     return this.adventure
   }
 

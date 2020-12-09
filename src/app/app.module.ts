@@ -12,6 +12,7 @@ import { AboutComponent } from './components/about/about.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { DataService } from './services/data.service';
+import { FilterPipe } from './filter.pipe';
 
 const appRoutes: Routes = [
   { path: '', component: ContentComponent },
@@ -28,12 +29,14 @@ const appRoutes: Routes = [
     ContentComponent,
     AboutComponent,
     SigninComponent,
-    SignupComponent
+    SignupComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
