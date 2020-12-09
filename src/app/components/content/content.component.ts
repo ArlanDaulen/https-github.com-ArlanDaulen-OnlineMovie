@@ -9,6 +9,8 @@ import { DataService } from '..//..//services/data.service';
 })
 export class ContentComponent implements OnInit {
 
+  searchText = '';
+
   menus = ["/Adventure", "/Action", "/Horror", "/Comedy", "/Detective", "/Cartoon"];
 
   constructor(private dataService: DataService) { }
@@ -39,10 +41,10 @@ export class ContentComponent implements OnInit {
         this.category = this.dataService.cartoonf();
         break;
       /*case 6:
-        this.dataService.fantasticf();
+        this.dataService.dramasf();
         break;
       case 7:
-        this.dataService.musicalf();
+        this.dataService.documentaryf();
         break;
       case 8:
         this.dataService.familyf();
